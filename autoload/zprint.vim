@@ -17,7 +17,7 @@ function zprint#apply()
 
   let current_col = col('.')
 
-  let l:cmd = 'zprint < ' . l:tmpname1 . ' > ' . l:tmpname2
+  let l:cmd = 'zp < ' . l:tmpname1 . ' > ' . l:tmpname2
   let l:out = zprint#System(l:cmd)
 
   let diff_offset = len(readfile(l:tmpname2)) - line('$')
